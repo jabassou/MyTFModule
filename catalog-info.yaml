@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: TF-Module
+  description: This is a test to create TF Module with a template
+  annotations:
+     backstage.io/techdocs-ref: dir:./docs
+spec:
+  type: service
+  owner: user:default/guest
+  lifecycle: experimental
+  providesApis:
+    - TF-Module
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: TF-Module
+  description: This is a test to create TF Module with a template
+spec:
+  type: internal
+  lifecycle: experimental
+  owner: user:default/guest
+  definition: "This is a test to create TF Module with a template"
